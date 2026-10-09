@@ -1,133 +1,94 @@
-# Napishi: навык, чтобы писать и говорить по-человечески
+# Napishi: agent skills for writing and speaking like a human
 
 [![skills.sh](https://skills.sh/b/iamursky/napishi)](https://skills.sh/iamursky/napishi)
 
-Навык для всех, кто пишет по-русски и разговаривает с людьми: авторов, редакторов, маркетологов, руководителей и всех, кому текст и переговоры нужны по работе. Он собран из двух десятков классических работ о слове — о ясности и простоте, о канцелярите, о живом языке, о приёмах письма, о редактуре, о продающем тексте, о выдумке, о переговорах и трудных разговорах — плюс свод примет машинного текста из статьи Wikipedia «Signs of AI writing» в русской адаптации.
+![A blue fountain pen nib pulls tangled gray strips into clean blue lines](/.github/images/cover.webp)
 
-У двух ремёсел один корень: уважение к человеку по ту сторону слова. Текст и разговор проваливаются от одного и того же — от равнодушия, фальши и желания казаться, а не сказать.
+Two language-specific skills help Claude, ChatGPT, and Codex write clear prose and handle difficult conversations without sounding bureaucratic, salesy, or machine-made.
 
-## Что делает
+The skills combine two crafts with the same foundation: respect for the person on the other side of the words. They cover writing, editing, storytelling, persuasion, feedback, negotiation, emotional conversations, and the patterns that make generated prose feel synthetic.
 
-Дайте Claude, ChatGPT или Codex текст или опишите разговор. Навык определит задачу и подключит нужные приёмы: вычистит канцелярит и штампы, вернёт глаголы вместо отглагольных существительных, сократит наполовину без потери смысла, найдёт конфликт и построит историю, проверит норму русского языка, поможет сдвинуться с места, когда не пишется.
+## Language versions
 
-Отдельная часть навыка — следы ИИ. Модель по умолчанию пишет ровным средним ритмом, дутыми оборотами, тройками в каждом перечислении и вежливыми хвостиками ассистента. Навык ставит диагноз по скоплению примет, а не по одному тире, и переписывает, а не вычёркивает: выхолощенный текст читается как машинный ровно так же.
+Each version uses native clichés, bureaucratic constructions, usage guidance, and examples. The English skill is an adaptation, not a literal translation of the Russian one.
 
-Вторая половина — живой разговор: собеседник кипит, спорит, закрылся, торгуется, ждёт плохих новостей или обратной связи. Навык подскажет, что сказать и в каком порядке. Манипуляции он отвергает: ложный дефицит, давление на страх и вину, «выбор без выбора» разобраны как то, что нужно распознавать и чему сопротивляться, а не применять.
+| Language | Skill name | Folder                             |
+| -------- | ---------- | ---------------------------------- |
+| Русский  | `napishi`  | [skills/napishi/](skills/napishi/) |
+| English  | `write`    | [skills/write/](skills/write/)     |
 
-## Что внутри
+Each folder is independently installable and contains its own `README.md`, `SKILL.md`, and `references/` directory.
 
-`SKILL.md` самодостаточен: одиннадцать законов текста, конвейер работы над черновиком, стоп-лист машинных оборотов, десять законов разговора и маршрутизатор по ситуациям. Двадцать один справочник несёт детали и подключается только тогда, когда нужен.
+## What they do
 
-О тексте:
+Use the skills to:
 
-| Файл                                              | Содержание                                                                             |
-| ------------------------------------------------- | -------------------------------------------------------------------------------------- |
-| [ai-sledy.md](references/ai-sledy.md)             | 33 приметы машинного текста, русские ИИ-маркеры, что не считать уликой, что беречь      |
-| [yasnost.md](references/yasnost.md)                 | Простота, обрезка, стиль, зачины и концовки; жанры нон-фикшн от интервью до юмора       |
-| [kancelyarit.md](references/kancelyarit.md)                       | Канцелярит и его лечение, сотни пар «мёртвое → живое», идиомы, строй фразы              |
-| [zhivoy-yazyk.md](references/zhivoy-yazyk.md)         | Живой язык против канцелярита, мнимые и настоящие болезни речи, норма и вкус            |
-| [priyomy.md](references/priyomy.md)                   | Полсотни приёмов письма — от порядка слов до «золотых монет» и концовок                 |
-| [redaktura.md](references/redaktura.md)               | Редакторское ремесло: тема, фактура, драматургия, герой, этика, работа с авторами       |
-| [prodayushchiy-tekst.md](references/prodayushchiy-tekst.md)                       | Продающий текст: заголовки, оффер, выгоды, цена, гарантии, призыв к действию            |
-| [kontent-marketing.md](references/kontent-marketing.md)         | Контент-маркетинг: польза вместо рекламы, честность, эксклюзив, тон                     |
-| [vydumka.md](references/vydumka.md)                 | 28 техник придумывания историй: бином фантазии, «что если», карты Проппа                |
-| [pisatelskiy-blok.md](references/pisatelskiy-blok.md)                     | Психология письма: страхи, внутренний критик, право на плохой черновик, регулярность    |
-| [struktura.md](references/struktura.md)               | Понятный текст быстро: «для кого и чтобы что», структура, саморедактура                 |
-| [norma.md](references/norma.md)           | Нормы русского языка: каталог ударений, форм, паронимов с мнемониками                   |
+- draft or edit emails, messages, posts, articles, landing pages, newsletters, reports, and documentation;
+- cut clutter, nominalizations, bureaucratic language, corporate jargon, clichés, and unsupported claims;
+- preserve voice and useful detail instead of reducing prose to a sterile summary;
+- diagnose clusters of AI-writing patterns and rewrite them naturally;
+- find a premise, structure a story, or get past writer's block;
+- prepare for conflict, disagreement, bad news, negotiation, praise, or criticism;
+- answer with empathy without becoming vague, flattering, or manipulative.
 
-Об общении:
+Neither skill is intended for code-generation requests.
 
-| Файл                                          | Содержание                                                                    |
-| --------------------------------------------- | ------------------------------------------------------------------------------ |
-| [kontakt.md](references/kontakt.md)           | 30 принципов расположения и убеждения без обиды                                |
-| [vliyanie.md](references/vliyanie.md)         | 7 механизмов влияния, этика, распознавание манипуляции и защита                |
-| [dostuchatsya.md](references/dostuchatsya.md)         | Цикл убеждения, работа с миндалиной, техники «достучаться» до любого           |
-| [trudnye-razgovory.md](references/trudnye-razgovory.md)               | Метод трёх разговоров для невыносимо трудных тем                               |
-| [peregovory.md](references/peregovory.md)                 | Гарвардский метод переговоров: интересы, варианты, критерии, НАОС              |
-| [davlenie.md](references/davlenie.md)                 | Система «нет»: разговор без нужды, вопросы, боль, бюджет                       |
-| [podkreplenie.md](references/podkreplenie.md)             | Положительное подкрепление, шейпинг, 8 способов убрать нежелательное поведение |
-| [emocii.md](references/emocii.md)       | 4 навыка эмоционального интеллекта, стратегии для диалога                      |
-| [liderstvo.md](references/liderstvo.md)         | Влияние как лидерство: доверие, вера в людей, служение                         |
+## Installation
 
-## Установка
-
-### Через `npx skills` (рекомендуется)
+### Via `npx skills`
 
 ```bash
+# Russian
+npx skills add iamursky/napishi/tree/main/skills/napishi
+
+# English
+npx skills add iamursky/napishi/tree/main/skills/write
+
+# Both
 npx skills add iamursky/napishi
 ```
 
 ### ChatGPT
 
-1. Скачайте репозиторий целиком, вместе с `SKILL.md` и папкой `references/`
-2. В боковой панели ChatGPT откройте **Plugins → Skills**
-3. Нажмите **Create → Upload from your computer** и загрузите папку навыка
-4. Дождитесь окончания проверки, затем выберите навык через `@` или попросите ChatGPT написать или отредактировать текст
+1. Download the folder for the language you need, including `SKILL.md` and `references/`.
+2. In the ChatGPT sidebar, open **Plugins → Skills**.
+3. Select **Create → Upload from your computer** and upload the skill folder.
+4. Select the skill with `@`, or make a relevant writing or conversation request.
 
 ### Claude Desktop / Web
 
-1. Скачайте [SKILL.md](SKILL.md) вместе с папкой `references/`
-2. Перейдите в **Customize → Skills → + → Upload a skill**
-3. Загрузите файлы
-4. Навык активируется автоматически, как только вы попросите Claude что-то написать, отредактировать или подсказать, как ответить человеку
+1. Download the entire folder for the language you need.
+2. Go to **Customize → Skills → + → Upload a skill**.
+3. Upload the folder. The skill will activate automatically for relevant requests.
 
-### Ручная установка для Claude Code
+### Manual install for Claude Code
 
 ```bash
-# Персональный (доступен во всех проектах)
 git clone https://github.com/iamursky/napishi ~/napishi
-ln -s ~/napishi ~/.claude/skills/napishi
 
-# Для проекта (доступен коллегам через git)
-git clone https://github.com/iamursky/napishi .napishi
-ln -s .napishi .claude/skills/napishi
+ln -s ~/napishi/skills/napishi ~/.claude/skills/napishi
+ln -s ~/napishi/skills/write ~/.claude/skills/write
 ```
-
-Проверить: `/skills` в сессии. Вызвать вручную: `/napishi`.
 
 ### Codex CLI
 
 ```bash
-# Персональный
 git clone https://github.com/iamursky/napishi ~/napishi
-ln -s ~/napishi ~/.codex/skills/napishi
 
-# Для проекта
-git clone https://github.com/iamursky/napishi .napishi
-ln -s .napishi .codex/skills/napishi
+ln -s ~/napishi/skills/napishi ~/.codex/skills/napishi
+ln -s ~/napishi/skills/write ~/.codex/skills/write
 ```
 
-Вызвать вручную: `$napishi`. Если в вашей сборке Codex навыки читаются из общей папки агентов, положите симлинк в `~/.agents/skills/`.
+Invoke the skills explicitly with `$napishi` or `$write`.
 
-## Использование
+## How they activate
 
-Навык назван по слову, с которого начинается почти каждая просьба, и на это слово он и срабатывает: «напиши письмо клиенту», «напиши пост», «напиши ответ на это сообщение». Просьбы написать код он не перехватывает.
+`napishi` applies to Russian prose and conversation. `write` applies to English prose and conversation. They trigger on requests to draft, rewrite, edit, shorten, humanize, remove AI-writing patterns, develop a story, or prepare for a difficult conversation. Requests to write code are excluded.
 
-Полный список: навык срабатывает, когда вы:
+## Authorship
 
-- Говорите «напиши» — про письмо, сообщение, пост, статью, лендинг, рассылку, доклад, документацию
-- Просите отредактировать или проверить готовый текст
-- Просите сократить, убрать канцелярит, штампы или следы ИИ, переписать «по-человечески»
-- Придумываете тему, сюжет, метафору или не можете начать
-- Спрашиваете «как правильно» про ударение, род, пароним или устойчивый оборот
-- Готовитесь к разговору, где собеседник расстроен, зол, спорит, сомневается или закрылся
-- Хотите убедить, отказать, сообщить плохие новости, договориться, похвалить или покритиковать
+These skills are original workflows assembled from long-standing principles of writing, editing, rhetoric, negotiation, and humane conversation. They do not reproduce or replace any single source. The sections on AI-writing patterns draw on Wikipedia's “Signs of AI writing,” available under CC BY-SA.
 
-Чтобы навык применялся сам, без напоминаний, добавьте строку в постоянные инструкции — `~/.claude/CLAUDE.md` для Claude Code, `~/.codex/AGENTS.md` для Codex, личные настройки ответов для Claude Desktop:
+## License
 
-```
-Когда пишешь или правишь любой текст — имейл, сообщение, пост, статью, документацию —
-применяй навык napishi. Для своих ответов в чате навык не применяй.
-```
-
-## Язык
-
-Навык написан на русском и работает с русским текстом: словари замен, приметы канцелярита и каталог ударений привязаны к языку. Приёмы структуры, редактуры и разговора применимы шире, но примеры остаются русскими.
-
-## Авторство
-
-Навык — самостоятельный текст: рабочий процесс, собранный из общих принципов ремесла, которые давно стали общим достоянием редакторской традиции. Он не воспроизводит и не заменяет ни одну книгу. Раздел о приметах машинного текста основан на статье Wikipedia «Signs of AI writing», доступной по лицензии CC BY-SA.
-
-## Лицензия
-
-См. [license](license).
+See [license](license).
